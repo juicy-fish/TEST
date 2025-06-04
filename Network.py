@@ -47,6 +47,7 @@ class CrossMapperPair(nn.Module):
     def forward(self, w_r, w_f):
         pred_f = self.r_to_f(w_r)  # F_{r→f}(W_r)
         pred_r = self.f_to_r(w_f)  # F_{f→r}(W_f)
+        print("second save")
         return pred_f, pred_r
 
 
